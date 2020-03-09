@@ -15,13 +15,25 @@ This will produce the prod files in a `dist` folder inside your project folder. 
    
    2.2 **New question layout** - Create a form to submit our question  
      2.2.1 Use https://material.angular.io  - follow directions to install under "Getting Started"
-        2.2.2 Import MatButtonModule in app.module.ts  
-        2.2.3 Add button component to app.component.html  
+        2.2.2 Imported MatButtonModule in app.module.ts  
+        2.2.3 Added button component to app.component.html  
         2.2.4 Got indigo-pink.css prebuilt theme working by including link in index.html and added mat-app-background class to body tag  
-        2.2.5 Add question.component.html and change question.component.ts template to URL of question.component.html  
-        2.2.6 Add input fields to question component
-        2.2.7 Add question component as our inline template for app.component.ts  
-        2.2.8 Add Card element from Material to our template
+        2.2.5 Added question.component.html and change question.component.ts template to URL of question.component.html  
+        2.2.6 Added input fields to question component
+        2.2.7 Added question component as our inline template for app.component.ts  
+        2.2.8 Added Card element from Material to our template
+
+   2.3 **New Question Functionality** (3/9/20)  
+       2.3.1 - Added a Submit button and click event functionality to question form  
+       2.3.2 - Added `<mat-card-content>` and `<mat-card-actions>` elements to add click functionality to button  
+       2.3.3 - Created `post()` function inside class QuestionComponent - tested in `console.log("test")`  
+       2.3.4 - Get the submitted value from our Question input field  using ngModel binding and pass in "question" into post function, `post(question)`  
+       2.3.5 - Bound to click event for POST and we are getting the submitted value from the Question input field  
+  
+   2.4 **Angular Service** (3/9/20)
+
+
+
 
 
 
