@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionComponent } from './question.component';
 
 function getDate() {
   var months = ['January','February','March','April','May','June','July',
