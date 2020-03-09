@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 
 @Component({
     selector: 'question',
-    template: 'This is a placeholder for question template.'
+    templateUrl: './question.component.html'
 })
 export class QuestionComponent{
 

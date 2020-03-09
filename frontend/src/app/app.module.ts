@@ -7,6 +7,8 @@ import { QuestionComponent } from './question.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, MatSliderModule, MatButtonModule
+    BrowserAnimationsModule, MatSliderModule, MatButtonModule, MatInputModule, MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
