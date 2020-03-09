@@ -14,6 +14,10 @@ This will produce the prod files in a `dist` folder inside your project folder. 
         2.1.3 Register QuestionComponent in main module, app.module.ts  
    2.2 New question layout - Create a form to submit our question  
         2.2.1 Use https://material.angular.io  - follow directions to install under "Getting Started"
+        2.2.2 Import MatButtonModule in app.module.ts  
+        2.2.3 Add button component to app.component.html  
+        2.2.4 Got indigo-pink.css prebuilt theme working by including link in index.html and added mat-app-background class to body tag  
+        
 
 
 
