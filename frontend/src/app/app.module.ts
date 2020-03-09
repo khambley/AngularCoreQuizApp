@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider'
+import { MatButtonModule } from '@angular/material'
 
 @NgModule({
   declarations: [
@@ -11,7 +14,8 @@ import { QuestionComponent } from './question.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule, MatSliderModule, MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
