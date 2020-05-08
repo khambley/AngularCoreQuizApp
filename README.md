@@ -30,7 +30,7 @@ This will produce the prod files in a `dist` folder inside your project folder. 
        2.3.4 - Get the submitted value from our Question input field  using ngModel binding and pass in "question" into post function, `post(question)`  
        2.3.5 - Bound to click event for POST and we are getting the submitted value from the Question input field  
   
-   2.4 **Angular Service** (3/9/20)
+   2.4 **Angular Service** (5/8/20)  
        2.4.1 - Added api.service.ts injectable to handle frontend http request -> response from API  
 
 
