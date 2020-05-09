@@ -12,6 +12,15 @@ namespace quiz_backend.Controllers
     [Route("api/Questions")]
     public class QuestionsController : Controller
     {
+		[HttpGet]
+		public IEnumerable<Question> Get()
+		{
+			return new Question[] {
+				new Question() { Text = "placeholder value1"},
+				new Question() { Text = "placeholder value2"}
+			};
+		}
+
 		[HttpPost]
 		public void Post([FromBody]Question question)
 		{
