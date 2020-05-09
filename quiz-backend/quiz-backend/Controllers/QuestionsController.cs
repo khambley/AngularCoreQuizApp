@@ -8,10 +8,15 @@ using quiz_backend.Models;
 
 namespace quiz_backend.Controllers
 {
-    [Produces("application/json")]
-    [Route("api/Questions")]
+	[Produces("application/json")]
+	[Route("api/Questions")]
     public class QuestionsController : Controller
     {
+		readonly QuizContext context;
+		public  QuestionsController(QuizContext context)
+		{
+			this.context = context;
+		}
 		[HttpGet]
 		public IEnumerable<Question> Get()
 		{
@@ -24,7 +29,8 @@ namespace quiz_backend.Controllers
 		[HttpPost]
 		public void Post([FromBody]Question question)
 		{
-
+			context.Questions.Add(question);
+			context.SaveChanges();
 		}
 	}
 }
