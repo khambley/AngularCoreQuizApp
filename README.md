@@ -32,6 +32,8 @@ This will produce the prod files in a `dist` folder inside your project folder. 
   
    2.4 **Angular Service** (5/8/20)  
        2.4.1 - Added api.service.ts injectable to handle frontend http request -> response from API  
+3. Creating backend server Get and Post Routes in ASP.NET CORE  
+       3.1.1 - Create a backend service to handle POST requests  
 
 
 
