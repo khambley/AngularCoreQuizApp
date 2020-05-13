@@ -20,10 +20,7 @@ namespace quiz_backend.Controllers
 		[HttpGet]
 		public IEnumerable<Question> Get()
 		{
-			return new Question[] {
-				new Question() { Text = "placeholder value1"},
-				new Question() { Text = "placeholder value2"}
-			};
+			return context.Questions;
 		}
 
 		[HttpPost]

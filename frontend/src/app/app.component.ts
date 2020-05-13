@@ -5,7 +5,7 @@ import { QuestionComponent } from './question.component';
 
 @Component({
   selector: 'app-root',
-  template: '<question></question>' //compose an inline template with the question component
+  template: '<question></question><questions><questions>' //compose an inline template with the question component
 })
 export class AppComponent implements OnInit {
   title = 'Angular Quiz';
