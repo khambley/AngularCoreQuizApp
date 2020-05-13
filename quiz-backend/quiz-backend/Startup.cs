@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using quiz_backend.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
 
 namespace quiz_backend
 {
@@ -29,7 +30,8 @@ namespace quiz_backend
 				builder
 				.AllowAnyOrigin()
 				.AllowAnyMethod()
-				.AllowAnyHeader();
+				.AllowAnyHeader()
+				.WithHeaders(HeaderNames.ContentType, "application/json");
 			}));
 			services.AddDbContext<QuizContext>(opt => opt.UseInMemoryDatabase("quiz"));
 
