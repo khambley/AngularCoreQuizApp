@@ -11,10 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
 import { ApiService } from './api.service';
 import { QuestionsComponent } from './questions.component';
 import { HomeComponent } from './home.component';
+import { NavComponent } from './nav.component';
 import { fromEventPattern } from 'rxjs';
 
 const routes = [
@@ -25,14 +27,14 @@ const routes = [
 
 @NgModule({
   declarations: [
-    AppComponent, QuestionComponent, QuestionsComponent, HomeComponent
+    AppComponent, QuestionComponent, QuestionsComponent, HomeComponent, NavComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
     AppRoutingModule,
-    BrowserAnimationsModule, MatSliderModule, MatButtonModule, MatInputModule, MatCardModule, MatListModule,
+    BrowserAnimationsModule, MatSliderModule, MatButtonModule, MatInputModule, MatCardModule, MatListModule, MatToolbarModule,
     FormsModule
   ],
   providers: [ApiService],

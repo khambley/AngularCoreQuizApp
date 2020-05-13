@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { QuestionComponent } from './question.component';
-
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>' //compose an inline template with the question component
+  template: '<nav></nav><router-outlet></router-outlet>'
 })
-export class AppComponent implements OnInit {
-
-  ngOnInit(){
-   
-  }
+export class AppComponent{
 }
