@@ -18,6 +18,12 @@ export class ApiService {
       console.log(res); //subscribing to an observable, waiting for an event to happen
     })
   }
+
+  putQuestion(question) {
+    this.http.put(`http://localhost:10440/api/questions/${question.id}`, question).subscribe(res => {
+      console.log(res); //subscribing to an observable, waiting for an event to happen
+    })
+  }
   selectQuestion(question){
     this.selectedQuestion.next(question)
   }
