@@ -34,6 +34,10 @@ This will produce the prod files in a `dist` folder inside your project folder. 
        2.4.1 - Added api.service.ts injectable to handle frontend http request -> response from API  
 3. Creating backend server Get and Post Routes in ASP.NET CORE  
        3.1.1 - Create a backend service to handle POST requests  
+7. Challenge **Displaying Quizzes**  (5/19/20)  
+       7.3.1 - Display quiz list in home component  
+       7.3.2 - Create new quiz or edit existing quiz at the top of home component    
+       7.3.3 - Edit quizzes when clicking them in the list
 
 
 

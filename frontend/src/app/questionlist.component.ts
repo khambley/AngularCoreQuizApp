@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { QuestionComponent } from './question.component';
 
 @Component({
-  template: '<quiz></quiz><quizzes><quizzes>' 
+  template: '<question></question><questions><questions>' 
 })
-export class HomeComponent {
+export class QuestionListComponent {
 
 }

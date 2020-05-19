@@ -15,21 +15,25 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
 import { ApiService } from './api.service';
 import { QuestionsComponent } from './questions.component';
+import { QuestionListComponent } from './questionlist.component';
 import { HomeComponent } from './home.component';
 import { NavComponent } from './nav.component';
 import { QuizComponent } from './quiz.component';
+import { QuizzesComponent } from './quizzes.component';
+import { QuizListComponent } from './quizlist.component';
 import { fromEventPattern } from 'rxjs';
 
 const routes = [
   { path: '', component: HomeComponent },
   { path: 'question', component: QuestionComponent },
-  { path: 'questions', component: QuestionsComponent },
-  { path: 'quiz', component: QuizComponent }
+  { path: 'questions', component: QuestionListComponent },
+  { path: 'quiz', component: QuizComponent },
+  { path: 'quizzes', component: QuizListComponent }
 ]
 
 @NgModule({
   declarations: [
-    AppComponent, QuestionComponent, QuestionsComponent, HomeComponent, NavComponent, QuizComponent
+    AppComponent, QuestionComponent, QuestionsComponent, HomeComponent, NavComponent, QuizComponent, QuizzesComponent, QuestionListComponent, QuizListComponent
   ],
   imports: [
     BrowserModule,
